@@ -41,12 +41,30 @@ header, section {
 
 /* sezione navbar */
 nav {
-    /* display: flex; */
     background-image: url(../img/jumbo.png);
     background-size: 100%;
     padding: 10px ;
     height: 430px;
 }
+
+#head-info h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    width: 800px;
+    margin: auto;
+}
+
+#head-info #under-text{
+    line-height: 30px;
+    padding-top: 50px;
+    color: white;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+
 
 nav .container > * {
     padding: 10px;
@@ -73,6 +91,7 @@ nav .nav-links ul {
 
 .nav-links a{
     color: white;
+    text-decoration: none;
 }
 
 
@@ -191,8 +210,6 @@ footer {
 
 
 footer .container > * {
-    border: dashed 2px white;
-    /* test */
 }
 
 
@@ -238,26 +255,37 @@ footer #footer-top .footer-column {
 
 .footer-column ul{
     list-style-type: none;
+}
 
+.footer-column h3{
+    color: #7884d7;
+}
+
+.footer-column li{
+    color: white;
+    margin: 10px;
+}
+
+
+hr{
+    width:1000px;
+    margin: auto;
 }
 
 footer #footer-bottom {
-    background-color: #7fffd4;
-    /* test */
-
     margin-top: 16px;
+}
+
+#footer-bottom .download{
+    width: 100px;
 }
 
 footer #footer-bottom {
     justify-content: space-between;
-
     padding: 16px 0;
 }
 
 footer #footer-bottom > * {
-    background-color: #ffb6c1;
-    /* test */
-
     padding: 4px 8px;
 }
 
