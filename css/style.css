@@ -200,18 +200,45 @@ footer #footer-top {
     margin-bottom: 30px;
 }
 
+footer #footer-top .footer-links h2{
+    color: #7a85d9;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-links img{
+    height: 20px;
+    vertical-align: middle;
+}
+
 footer #footer-top .footer-links {
-    background-color: #f08080;
     height: 500px;
     width: 250px;
     /* test */
+    padding: 10px;
+}
+
+.footer-links span{
+    color: white;
+}
+
+.lang{
+    padding-bottom: 10px;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
 }
 
 footer #footer-top .footer-column {
-    background-color: #20b2aa;
-    /* test */
-    
+    padding: 10px;
     flex-grow: 1;
+}
+
+.footer-column ul{
+    list-style-type: none;
+
 }
 
 footer #footer-bottom {
