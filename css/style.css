@@ -7,8 +7,18 @@
 
 
 /* i container hanno una dimensione fissa,  centrati orizzontalmente */
+
+@font-face{
+    font-family: 'whitney Bold';
+    src: url(../fonts/whitneymedium.otf);
+}
+@font-face{
+    font-family: 'whitney Medium';
+    src: url(../fonts/whitneybold.otf);
+}
+
 body{
-    font-family: sans-serif;
+    font-family: 'whitney', sans-serif;
 }
 
 .container {
@@ -43,6 +53,7 @@ header, section {
 nav {
     background-image: url(../img/jumbo.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 10px ;
     height: 430px;
 }
@@ -57,9 +68,9 @@ nav {
 
 #head-info #under-text{
     line-height: 30px;
-    padding-top: 50px;
+    padding-top: 40px;
     color: white;
-    width: 800px;
+    width: 600px;
     margin: auto;
     text-align: center;
 }
@@ -78,8 +89,16 @@ nav .logo {
     width: 100px;
 }
 
+.links .fa{
+    display: flex;
+    align-items: flex-end;
+    gap: 1em;
+}
 
 nav .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
 nav .nav-links ul {
@@ -126,6 +145,7 @@ nav .login {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    padding-top: 20px;
 }
 
 /* fine sezione navbar */
@@ -134,6 +154,23 @@ nav .login {
 
 /* sezione hero */
 
+.wave{
+    display: block;
+    width: 100%;
+    filter: invert(100%) sepia(47%) saturate(62%) hue-rotate(269deg) brightness(110%) contrast(93%);
+}
+
+.wave-reverse{
+    display: block;
+    width: 100%;
+    transform: rotate(180deg);
+    filter: invert(100%) sepia(47%) saturate(62%) hue-rotate(269deg) brightness(110%) contrast(93%);
+}
+
+.big-content p{
+    text-align: center;
+    font-weight: normal;
+}
 
 /* fine sezione hero */
 
@@ -141,11 +178,13 @@ nav .login {
 /* sezioni grigie */
 h2{
     font-size: 38px;
+    font-family: 'whitney';
 }
 
 .row {
     display: flex;
 }
+
 
 .column-big {
     height: 500px;
@@ -156,8 +195,6 @@ h2{
 .column-small {
     font-size: 25px;
     height: 500px;
-    /* test */
-
     width: 400px;
 }
 
@@ -171,7 +208,6 @@ h2{
     height: 800px; 
 }
 
-
 #img-big {
     display: flex;
     height: 530px;
@@ -180,6 +216,14 @@ h2{
 
 .big-content h2,#img-big{
     text-align: center;
+}
+
+.big-content h2{
+    margin-bottom: 10px;
+}
+
+.big-content p{
+    font-weight: lighter;
 }
 
 #redirect{
@@ -200,6 +244,10 @@ h2{
     color: black;
     border-radius: 50px;
     width: 180px;
+}
+
+.download .fa{
+    margin-right: 1em;
 }
 
 .download a{
@@ -225,10 +273,6 @@ footer {
 }
 
 
-footer .container > * {
-}
-
-
 footer #footer-top {
     margin-bottom: 30px;
 }
@@ -237,6 +281,11 @@ footer #footer-top .footer-links h2{
     color: #7a85d9;
     font-size: 20px;
     padding-bottom: 20px;
+}
+
+footer #footer-top .footer-links .fa{
+    font-size: 0.5em;
+    vertical-align: middle;
 }
 
 .footer-links img{
@@ -262,6 +311,8 @@ footer #footer-top .footer-links {
 .social{
     display: flex;
     gap: 10px;
+    color: white;
+    font-size: 1.6em;
 }
 
 footer #footer-top .footer-column {
@@ -279,7 +330,7 @@ footer #footer-top .footer-column {
 
 .footer-column li{
     color: white;
-    margin: 10px;
+    margin: 20px;
 }
 
 
