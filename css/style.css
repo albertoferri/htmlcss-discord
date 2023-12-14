@@ -47,11 +47,11 @@ nav {
     height: 430px;
 }
 
-#head-info h2{
+#head-info h2,.head-info a{
     text-align: center;
     color: rgb(255, 255, 255);
     padding-top: 50px;
-    width: 800px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -107,18 +107,32 @@ nav .login {
     color: black;
     text-decoration: none;
 }
+
+.open-discord a{
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23272a;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    width: 250px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
 /* fine sezione navbar */
 
 
 
 /* sezione hero */
-
-
-#hero .container-small {
-    /* height: 300px;
-    test */
-    
-}
 
 
 /* fine sezione hero */
@@ -189,6 +203,8 @@ h2{
 }
 
 .download a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: white;
 }
